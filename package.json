@@ -1,0 +1,10 @@
+{
+  "name": "headerguard",
+  "version": "1.0.0",
+  "description": "Website HTTP security-header checker. School Purpose Only.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "license": "MIT"
+}
