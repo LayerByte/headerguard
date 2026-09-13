@@ -4,59 +4,88 @@ Website HTTP security-header checker.
 
 School Purpose Only.
 
-Only use this project on systems and networks you own or have explicit permission to test.
-
 ## Overview
 
-Headerguard is a defensive cybersecurity and system-administration project written in Modern JavaScript / Node.js. It focuses on read-only analysis, validation, clear output, and safe handling of user-provided files, URLs, hosts, or text.
+Headerguard is a focused educational cybersecurity utility built with JavaScript. It is designed for defensive learning, local analysis, and authorized administration tasks. The project keeps the workflow simple, readable, and practical so students can understand how the tool works without digging through unnecessary framework code.
 
 ## Features
 
-- Defensive, educational workflow
-- Read-only file and network analysis where applicable
-- Input validation and friendly error messages
-- No credential collection, payload delivery, exploitation, or destructive actions
-- Small, understandable codebase suitable for students
+- Clean project layout with a focused purpose
+- Defensive, read-only analysis where applicable
+- Input validation with clear user feedback
+- Graceful error handling for common mistakes
+- Copy-friendly terminal or application output
+- MIT licensed for simple educational reuse
+
+## Supported Operations
+
+- Validate user-provided input before processing
+- Analyze local files, text, logs, network metadata, or configuration data depending on the project goal
+- Print or display structured results in a beginner-readable format
+- Avoid destructive actions, credential collection, exploitation, brute forcing, or malware behavior
 
 ## Requirements
 
-- Node.js 18+
+- Modern web browser or Node.js 20+ depending on the project folder
+- No unnecessary third-party packages
 
 ## Installation
 
-Clone or copy this project folder, then follow the standard build or run command for Modern JavaScript / Node.js.
+Clone the repository, open the project folder, and install or build with the standard toolchain:
+
+```bash
+npm install
+```
 
 ## Usage
 
-`npm start -- --mode headers --value https://example.com`
-`npm start -- --mode password --value "local test phrase"`
+Run the project from the repository root:
+
+```bash
+npm start
+```
 
 ## Example
 
 ```text
-npm start -- --mode url --value https://example.com
+Start the tool, provide a local file, host, URL, log, or configuration sample when requested, then review the generated report.
 ```
 
-## How It Works
+## Learning Objectives
 
-The tool validates input, performs a focused defensive analysis task, and prints a clear report. File operations are read-only and network operations use normal platform TLS and timeout behavior.
+- Understand one practical defensive security concept
+- Practice safe input handling and readable error messages
+- Learn how small security tools are structured
+- Compare language-specific approaches to files, text, networking, or system data
+- Build habits for authorized and ethical analysis only
 
-## Security Considerations
+## Security Notes
 
-- Do not run tools against systems without permission.
-- Do not paste secrets into command-line arguments.
-- Review output before sharing it because file paths and hostnames may be sensitive.
-- Network tools do not disable certificate validation.
+- Use this project only on systems, files, and data you own or have permission to inspect.
+- Do not paste real secrets into command-line arguments or screenshots.
+- Review output before sharing because paths, hostnames, and sample data may be sensitive.
+- Network-focused tools use normal platform behavior and should not be used for scanning targets without permission.
 
-## Limitations
+## Development
 
-- Designed for education and local administration workflows.
-- Not a replacement for enterprise security monitoring.
-- Some platform-specific data may vary by operating system.
+Keep browser-only tools local-first, validate user input, and avoid sending file contents to remote services.
+
+Suggested local checks:
+
+```bash
+# Run the project help command first.
+# Then test with a small, non-sensitive sample input.
+```
+
+## Known Limitations
+
+- Built for education and small local workflows, not enterprise monitoring.
+- Results depend on operating system permissions and available platform APIs.
+- Some projects intentionally avoid advanced features to keep the code beginner-readable.
 
 ## Disclaimer
 
-This project is for defensive learning, school assignments, and authorized administration. It does not include malware, credential theft, brute-force attacks, exploitation, payload delivery, persistence, or bypass functionality.
+This project is for defensive learning, school assignments, and authorized administration. It does not include malware, credential theft, brute-force attacks, exploitation, payload delivery, persistence, bypass functionality, or unauthorized access functionality.
 
 ## License
 
